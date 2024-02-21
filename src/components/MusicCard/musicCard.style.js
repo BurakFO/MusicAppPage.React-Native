@@ -26,7 +26,7 @@ export default StyleSheet.create({
     },
 
     musicDetails:{
-        maxWidth: window_width/2, //simdilik kalsin daaha sonra title style'ina yapicaz.
+        flex:1,
         marginLeft: 10,
         justifyContent: 'center',
     },
@@ -51,7 +51,25 @@ export default StyleSheet.create({
         marginLeft: 20,
         color: 'grey',
         fontSize: 11.5,
-        fontStyle:'bold',
+
+    },
+
+    musicStock:{
+
+        
+        justifyContent:'center',
+
+    },
+
+    musicStockText:{
+        textAlign:'right',
+        marginRight:10,
+        marginTop:30,
+        padding:5,
+        borderWidth:1,
+        borderColor:'red',
+        borderRadius:7,
+        color:'red',
     },
 
 });

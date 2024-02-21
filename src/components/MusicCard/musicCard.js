@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import {
-    SafeAreaView,
-    StyleSheet,
     Text,
     View,
-    FlatList,
     Image,
 } from 'react-native';
 
@@ -36,9 +33,14 @@ const MusicCard = ({ musics }) => {
             </View>
 
 
-            <View style={styles.soldOut}>
+            {!musics.isSoldOut && (
+                <View style={styles.musicStock}>
+                    <Text style={styles.musicStockText}>Sold Out</Text>
+                </View>
+            )}
 
-            </View>
+
+
 
         </View>
 
